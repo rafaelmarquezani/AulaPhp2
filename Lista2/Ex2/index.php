@@ -17,9 +17,12 @@
     <div class="row">
     <div class= "col">
     <?php
-        for($i=1; $i<=20; $i++){
-            
-        ?>
+
+    for($i=1; $i<=20; $i++){
+
+
+    
+?>
         <label for="valor<?=$i?>" class ="label-control">
             Informe o valor <?=$i?>
         </label>
@@ -27,12 +30,19 @@
             class="form-control"/>
     </div>
     <?php
- 
-        }
+        
+    }
     ?>
     </div>
     <div class ="row">
     <div class ="col">
+    <div class= "col">
+        <label for="vp" class ="label-control">
+            Informe o valor a ser pesquisado 
+        </label>
+        <input type="number" name="vp" id="vp"
+            class="form-control"/>
+    </div>
     <button class="btn btn-primary">Enviar</button>
 </div>
 </div>
