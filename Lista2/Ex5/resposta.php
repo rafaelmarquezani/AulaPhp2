@@ -8,29 +8,58 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Resposta ex1</title>
+    <title>Exercicio5</title>
   </head>
-  <body class="container">
-    <h1>Resposta ex1</h1>
-    
-    <?php
-        $vp = $_POST['vp'];
-        for ($i = 1; $i <= 20; $i++) {
-          $valor = $_POST["val$i"];
-          if ($valor >= 1 && $valor <= 10) {
-            $vetor[$i] = $_POST["valor$i"];
-            echo "Vetor $i - Valor $valor permitido <br/>";
-          } else
-            echo "Vetor $i - Valor $valor  não permitido <br/>";
-        }
-      
-        foreach ($vetor as $chave => $valor) {
-          if ($valor == $pos) {
-            echo "Valor desejado: $pos, posição dele: vetor $chave <br/>";
-          }
-        }
+  <body class ="container">
+    <h1>Exercicio5</h1>
 
+    <?php
+  
+      for ($i=1; $i<=10; $i++)
+      {
+        $ordena[$i] = $_POST["valor$i"];
+      }
+      
+      echo "<br>";
+      echo "Crescente";
+      echo "<br>";
+      
+      function ordenaC($ordena)
+      {
+        sort($ordena);
+        foreach ($ordena as $chave => $valor)
+        {
+          echo "<br>";
+          echo "Posição do Vetor: $chave e seu valor é $valor";
+          echo "<br>";
+        }
+      }
+      OrdenaC($ordena);
+
+      
+      for ($i=1; $i<=10; $i++)
+      {
+        $ordenaD[$i] = $_POST["valor$i"];
+      }
+      
+      echo "<br>";
+      echo "Decrescente";
+      echo "<br>";
+      
+      function OrdenaD($ordenado)
+      {
+        rsort($ordenado);
+        foreach ($ordenado as $chave => $valor)
+        {
+          echo "<br>";
+          echo "Posição do Vetor: $chave e seu valor é $valor";
+          echo "<br>";
+        }
+      }
+      OrdenaD($ordenado);
+      
     ?>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
