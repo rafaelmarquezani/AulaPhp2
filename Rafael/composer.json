@@ -1,0 +1,16 @@
+{
+    "name": "aluno/rafael",
+    "description": "Este  e um exemplo de projeto",
+    "autoload": {
+        "psr-4": {
+            "Aluno\\Rafael\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rafael Marquezani",
+            "email": "rafael.marquezani2@fatec.sp.gov.br"
+        }
+    ],
+    "require": {}
+}
