@@ -1,5 +1,6 @@
 <?php
 
+
 require_once __DIR__.'/vendor/autoload.php';
 
 //Recupera o que o usuario digitou
@@ -14,6 +15,10 @@ $router = new \Aluno\Rafael\Router($method, $path);
 $router->get('/ola-mundo', function(){
     return "Olá Mundo!";
 });
+
+$router->get('/exemplo','Aluno\Rafael\Controller\ExercicioController::exibir');
+$router->post('/exemplo-resultado',
+'Aluno\Rafael\Controller\ExercicioController::exibirResultado');
 
 //Adicionar validas abaixo
 
