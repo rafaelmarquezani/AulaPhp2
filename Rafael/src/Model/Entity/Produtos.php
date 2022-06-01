@@ -9,14 +9,6 @@ class Produtos {
     private $descricao;
     private $valor;
 
-    public function __construct($id, $nome, $descricao, $valor)
-    {
-        $this->setId($id);
-        $this->setNome($nome);
-        $this->setDescricao($descricao);
-        $this->setValor($valor);
-    }
-
 
     public function getId(){
         return $this->id;

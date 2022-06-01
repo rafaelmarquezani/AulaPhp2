@@ -10,31 +10,31 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body class="container">
     <h1>Exemplo</h1>
 
-    <form method='post' action = ExercicioController.php> 
-    <div class="row">
-        <div clas ="col">
-        <label class="label-control">Valor 1</label>
-        <input class=form-control name="valor1" type="text" />
+    <form method="POST" action="/exemplo-resultado">
+        <div class="row">
+            <div class="col">
+                <label class="label-control">Valor 1</label>
+                <input class="form-control" name="valor1" type="text"/>
+            </div>
+            <div class="col">
+                <label class="label-control">Valor 2</label>
+                <input class="form-control" name="valor2" type="text"/>
+            </div>
         </div>
-    <div class="row">
-        <div class="col">
-            <button type="submit" class="btn btn-primary">OK</button>
+        <div class="row">
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Ok</button>
+            </div>
         </div>
-    </div>
-
-    </div>
-
-
     </form>
-
+    
     <?php
         if (isset($soma))
-        echo "O valor da soma é $soma";
-        ?>
-
+            echo "O valor da soma é $soma";
+    ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

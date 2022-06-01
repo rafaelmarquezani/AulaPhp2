@@ -4,47 +4,42 @@ namespace Aluno\Rafael\Model\Entity;
 
 class Clientes {
 
-    private $id;
-    private $nome;
-    private $email;
-    private $idade;
 
-    public function __construct($id, $nome, $email, $idade)
-    {
-        $this->setId($id);
-        $this->setNome($nome);
-        $this->setEmail($email);
-        $this->setIdade($idade);
+        private $id;
+        private $nome;
+        private $email;
+        private $idade;
+    
+        public function getId(){
+            return $this->id;
+        }
+    
+        public function setId($id){
+            $this->id = $id;
+        }
+    
+        public function getNome(){
+            return $this->nome;
+        }
+    
+        public function setNome($nome){
+            $this->nome = $nome;
+        }
+    
+        public function getEmail(){
+            return $this->email;
+        }
+    
+        public function setEmail($email){
+            $this->email = $email;
+        }
+    
+        public function getIdade(){
+            return $this->idade;
+        }
+    
+        public function setIdade($idade){
+            $this->idade = $idade;
+        }
+    
     }
-
-
-    public function getId(){
-        return $this->id;
-    }
-    public function setId($id){
-        $this->id= $id;
-    }
-
-    public function getNome(){
-        return $this->nome;
-    }
-    public function setNome($nome){
-        $this->nome= $nome;
-    }
-
-    public function getEmail(){
-        return $this->email;
-    }
-    public function setEmail($email){
-        $this->email= $email;
-    }
-
-    public function getIdade(){
-        return $this->idade;
-    }
-    public function setIdade($idade){
-        $this->idade= $idade;
-    }
-
-
-}
