@@ -38,6 +38,24 @@ $router->post('/cliente/editar/{id}',
 $router->get('/cliente/excluir/{id}',
 'Aluno\Rafael\Controller\ClientesController::excluirCliente');
 
+$router->get('/produto/novo',
+'Aluno\Rafael\Controller\ProdutosController::abrirFormularioInserir');
+
+$router->post('/produto/inserir',
+'Aluno\Rafael\Controller\ProdutosController::inserirProduto');
+
+$router->get('/produtos',
+'Aluno\Rafael\Controller\ProdutosController::abrirListaProdutos');
+
+$router->get('/produto/alterar/{id}',
+'Aluno\Rafael\Controller\ProdutosController::abrirFormularioAlterar');
+
+$router->post('/produto/editar/{id}',
+'Aluno\Rafael\Controller\ProdutsController::editarProduto');
+
+$router->get('/produto/excluir/{id}',
+'Aluno\Rafael\Controller\ProdutosController::excluirProduto');
+
 //Adicionar validas abaixo
 
 $result = $router->handler();

@@ -11,6 +11,9 @@
               Clientes
           </a>
         </li>
+        <li>
+          <a class="nav-link active" aria-current="page" href="/produtos">Produtos</a>
+        </li>
       </ul>
     </div>
   </div>
